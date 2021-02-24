@@ -1,8 +1,10 @@
 <?php
+namespace task1\DigitalGoods;
 
-include "PhysicalGoods.php";
+include_once "PhysicalGoods.php";
+use task1\PhysicalGoods as PhysicalGoods;
 
-class GigitalGoods extends PhysicalGoods{
+class DigitalGoods extends PhysicalGoods\PhysicalGoods{
     function __construct($name,$count,$price){
         parent::__construct($name,$count,$price);
     }
@@ -16,6 +18,3 @@ class GigitalGoods extends PhysicalGoods{
     }
 }
 
-// $book = new GigitalGoods('Книга',2,1200);
-// echo $book->getPrice()."<br>";
-// echo $book->revenue()."<br>";

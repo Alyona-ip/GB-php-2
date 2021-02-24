@@ -13,6 +13,10 @@ abstract class Goods{
         return $this->count;
     }
 
+    function getName(){
+        return $this->name;
+    }
+
     abstract function getPrice();
     abstract function revenue();
 

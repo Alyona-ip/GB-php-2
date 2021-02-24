@@ -1,8 +1,10 @@
 <?php
+namespace task1\PhysicalGoods;
 
-include "Goods.php";
+include_once "Goods.php";
+use task1\Goods as Goods;
 
-class PhysicalGoods extends Goods{
+class PhysicalGoods extends Goods\Goods{
     private $price; //цена за штуку
 
     function __construct($name,$count,$price){
@@ -20,6 +22,3 @@ class PhysicalGoods extends Goods{
 
 }
 
-// $book = new PhysicalGoods('Книга',2,1200);
-// echo $book->getPrice()."<br>";
-// echo $book->revenue()."<br>";
